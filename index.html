@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>平靜番茄鐘 | Calm Pomodoro</title>
+    <!-- 引入 Google Fonts: Quicksand 提供圓潤、平靜的字體體驗 -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+    
+    <main class="glass-container">
+        <header>
+            <h1>平靜番茄鐘</h1>
+            <p>專注當下，保持平靜</p>
+        </header>
+
+        <section class="timer-section">
+            <div class="mode-selector">
+                <button id="work-btn" class="active">專注 (25:00)</button>
+                <button id="break-btn">休息 (5:00)</button>
+            </div>
+            
+            <div class="timer-display">
+                <span id="minutes">25</span><span class="colon">:</span><span id="seconds">00</span>
+            </div>
+            
+            <div class="controls">
+                <button id="start-btn" class="primary-btn">開始</button>
+                <button id="pause-btn" class="secondary-btn">暫停</button>
+                <button id="reset-btn" class="secondary-btn">重置</button>
+            </div>
+        </section>
+
+        <section class="tasks-section">
+            <h2>待辦事項</h2>
+            <div class="task-input-wrapper">
+                <input type="text" id="task-input" placeholder="新增待辦事項...">
+                <button id="add-task-btn">+</button>
+            </div>
+            <ul id="task-list">
+                <!-- 待辦事項會顯示在這裡 -->
+            </ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
